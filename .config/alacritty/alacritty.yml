@@ -1,0 +1,36 @@
+
+window:
+  decorations: none
+
+mouse_bindings: 
+  - mouse: Right
+    action: Copy
+
+colors:
+  primary:
+    background: '0x000000'
+    foreground: '0xffffff'
+    bright_foreground: '0xffff55'
+  bright:
+    black:   '0x555555'
+    red:     '0xff6e6e'
+    green:   '0x72ff72'
+    yellow:  '0xffee80'
+    blue:    '0x81aaff'
+    magenta: '0xf685ff'
+    cyan:    '0x7fffff'
+    white:   '0xffffff'
+
+font:
+  normal:
+    family: "Hack Nerd Font"
+    style: Regular
+  bold:
+    family: "Hack Nerd Font"
+    style: Bold
+  italic:
+    family: "Hack Nerd Font"
+    style: Italic
+
+  size: 8
+
