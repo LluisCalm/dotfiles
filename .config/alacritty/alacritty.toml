@@ -1,0 +1,36 @@
+[[mouse.bindings]]
+action = "Copy"
+mouse = "Right"
+
+[colors.bright]
+black = "0x555555"
+blue = "0x81aaff"
+cyan = "0x7fffff"
+green = "0x72ff72"
+magenta = "0xf685ff"
+red = "0xff6e6e"
+white = "0xffffff"
+yellow = "0xffee80"
+
+[colors.primary]
+background = "0x000000"
+bright_foreground = "0xffff55"
+foreground = "0xffffff"
+
+[font]
+size = 8
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[window]
+decorations = "none"
