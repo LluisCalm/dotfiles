@@ -48,22 +48,22 @@ alias wnodes="watch -n1 kubectl get nodes"
 
 # FUNCTIONS
 function encode() {
-   input=${1:-$(</dev/stdin)}
-   if [ -z "$input" ]; then
-     echo "Usage: encode <string>"
-     return 1
-   fi
-   echo -n "$input" | sed 's/==$/=/g' | base64
- }
+  input=${1:-$(</dev/stdin)}
+  if [ -z "$input" ]; then
+    echo "Usage: encode <string>"
+    return 1
+  fi
+  echo -n "$input" | sed 's/==$/=/g' | base64
+}
 
 function decode() {
-   input=${1:-$(</dev/stdin)}
-   if [ -z "$input" ]; then
-     echo "Usage: decode <base64_string>"
-     return 1
-   fi
-   echo -n "$input" | base64 -d
- }
+  input=${1:-$(</dev/stdin)}
+  if [ -z "$input" ]; then
+    echo "Usage: decode <base64_string>"
+    return 1
+  fi
+  echo -n "$input" | base64 -d
+}
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
