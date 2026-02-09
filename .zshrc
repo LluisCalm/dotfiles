@@ -65,6 +65,13 @@ function decode() {
   echo -n "$input" | base64 -d
 }
 
+function jwtd() {
+  if [[ -x $(command -v jq) ]]; then
+	jq -R 'split(".") | .[0],.[1] | @base64d | fromjson' <<< "${1}"
+    echo "Signature: $(echo "${1}" | awk -F'.' '{print $3}')"
+  fi
+}
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
